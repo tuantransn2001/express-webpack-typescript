@@ -8,12 +8,12 @@ import socket from "./socket";
 import mongoose from "mongoose";
 import rootRouter from "./routes";
 // ? ============================== ENV VARIABLES ==================================
-const LOCAL_HOST: string = process.env.LOCAL_HOST as string;
-const SERVER_HOST: string = process.env.SERVER_HOST as string;
-const PORT: string = process.env.PORT as string;
-const DB_CONNECT_LINK: string = process.env.DB_CONNECT_LINK as string;
-const ROOT_URL: string = process.env.ROOT_URL as string;
-const ENVIRONMENT: string = process.env.ENVIRONMENT as string;
+const LOCAL_HOST = process.env.LOCAL_HOST as string;
+const SERVER_HOST = process.env.SERVER_HOST as string;
+const PORT = process.env.PORT as string;
+const DB_CONNECT_LINK = process.env.DB_CONNECT_LINK as string;
+const ROOT_URL = process.env.ROOT_URL as string;
+const ENVIRONMENT = process.env.ENVIRONMENT as string;
 // ? ============================== CONFIG VARIABLES =============================
 const corsOrigin = "*";
 // ? ============================== INITIATE SERVER =============================

@@ -1,6 +1,7 @@
-import { STATUS_CODE } from "../ts/enums/api_enums";
+import { STATUS_CODE } from "../common/enums/api.enums";
 import HttpException from "./http.exception";
-class RestFullAPI {
+
+export class RestFullAPI {
   public data: any;
   public message: string;
   public statusCode: number;
@@ -8,7 +9,7 @@ class RestFullAPI {
   constructor() {
     this.data = {};
     this.message = "";
-    this.statusCode = STATUS_CODE.STATUS_CODE_200;
+    this.statusCode = STATUS_CODE.OK;
   }
 
   public static onSuccess(statusCode: number, message: string, data?: any) {
@@ -22,5 +23,3 @@ class RestFullAPI {
     };
   }
 }
-
-export default RestFullAPI;
